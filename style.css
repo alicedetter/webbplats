@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap:3rem;
+    background: #ffffff;
+    flex-grow:10;
+    padding:15px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+header{
+    background: #c57b53;
+    height:65px;
+    display:flex;
+    align-items:center;
+    padding:8px;
+}
+nav{
+    background: #dca98e;
+    height:35px;
+    display:flex;
+    align-items:center;
+    padding:15px;
+}
+footer{
+    background: #dca98e;
+    display:flex;
+    justify-content:center;
+    height:40px;
+    align-items:center;
+}
+body{
+    height:100dvh;
+    display:flex;
+    flex-direction:column;
+    font-family: "Oswald", sans-serif;
+}
+nav a:hover{
+    color: rgb(77, 77, 77);
+}
+nav a{
+    margin-right:20px;
+    color:black;
+}
+/*div{
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}*/
+.welcome{
+    width:fit-content;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+    width:100%;
+}
+.aboutus{
+    margin-top:10px;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}
+.joinus{
+    margin-top:10px;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}
+.leftside{
+    display:flex;
+    flex-direction:column;
+}
+.rightside{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:2rem;
+    background: #d48e69;
+    border-radius:5px;
+    padding:8px;
+    height:fit-content;
+    margin-top:4rem;
+}
+img{
+    width:15rem;
+    height:12rem;
+}
+.jointoday{
+    margin-top:10px;
+    width:100%;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}
+.news{
+    margin-top:10px;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}
+.kalenderbild{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:500px;
+    height:450px;
+}
+.person{
+    width:230px;
+    height:230px;
+}
+.person2{
+    width:200px;
+    height:240px;
+}
+.birdinfo{
+    margin-top:10px;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}
+.bird1{
+    width:100%;
+    height:fit-content;
+    margin-top:10px;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}
+.bird2{
+    width:100%;
+    height:fit-content;
+    margin-top:10px;
+    background: #c57b53;
+    border-radius:5px;
+    padding:8px;
+}
+@media screen  and (max-width: 950px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+    .rightside{
+        margin-top:1rem;
+        flex-wrap: wrap;
+    }
+    .person{
+        width:140px;
+        height:140px;
+    }
+    .person2{
+        width:110px;
+        height:150px;
+    }
+    header{
+        height:fit-content;
+    }
+    .kalenderbild{
+        width:350px;
+        height:300px;
+    }
+
+}
